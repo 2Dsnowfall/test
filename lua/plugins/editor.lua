@@ -21,6 +21,16 @@ return {
     }
   },
   {
+    'saghen/blink.indent',
+    --- @module 'blink.indent',
+    --- @type blink.indent.Config
+    opts = {
+      scope = {
+        highlights = { 'blinkpairsred', 'blinkpairsorange', 'blinkpairsyellow', 'blinkpairsgreen', 'blinkpairsblue', 'blinkpairsmauve', 'blinkpairsviolet' },
+      }
+    }
+  },
+  {
     "catgoose/nvim-colorizer.lua",
     event = "BufReadPre",
     opts = {
