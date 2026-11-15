@@ -1,8 +1,8 @@
 -- Blink colorscheme
-vim.api.nvim_set_hl( 0, 'blinkred',    { fg = "#ff3333" } )
-vim.api.nvim_set_hl( 0, 'blinkorange', { fg = "#ffaa55" } )
-vim.api.nvim_set_hl( 0, 'blinkyellow', { fg = "#ffff88" } )
-vim.api.nvim_set_hl( 0, 'blinkgreen',  { fg = "#88ff88" } )
+vim.api.nvim_set_hl( 0, 'blinkred',    { fg = "#ff4444" } )
+vim.api.nvim_set_hl( 0, 'blinkorange', { fg = "#ee9933" } )
+vim.api.nvim_set_hl( 0, 'blinkyellow', { fg = "#dddd88" } )
+vim.api.nvim_set_hl( 0, 'blinkgreen',  { fg = "#77ee88" } )
 vim.api.nvim_set_hl( 0, 'blinkblue',   { fg = "#5566ff" } )
 vim.api.nvim_set_hl( 0, 'blinkmauve',  { fg = "#8844ff" } )
 vim.api.nvim_set_hl( 0, 'blinkviolet', { fg = "#ff44cc" } )
