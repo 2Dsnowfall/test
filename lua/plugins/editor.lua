@@ -1,11 +1,11 @@
 -- Blink colorscheme
-vim.api.nvim_set_hl( 0, 'blinkred',    { fg = "#ff4444" } )
-vim.api.nvim_set_hl( 0, 'blinkorange', { fg = "#ee9933" } )
-vim.api.nvim_set_hl( 0, 'blinkyellow', { fg = "#dddd88" } )
-vim.api.nvim_set_hl( 0, 'blinkgreen',  { fg = "#77ee88" } )
-vim.api.nvim_set_hl( 0, 'blinkblue',   { fg = "#5566ff" } )
-vim.api.nvim_set_hl( 0, 'blinkmauve',  { fg = "#8844ff" } )
-vim.api.nvim_set_hl( 0, 'blinkviolet', { fg = "#ff44cc" } )
+vim.api.nvim_set_hl( 0, 'blinkred',    { fg = "#ff8888" } )
+vim.api.nvim_set_hl( 0, 'blinkorange', { fg = "#ffbb88" } )
+vim.api.nvim_set_hl( 0, 'blinkyellow', { fg = "#ffff88" } )
+vim.api.nvim_set_hl( 0, 'blinkgreen',  { fg = "#88ff88" } )
+vim.api.nvim_set_hl( 0, 'blinkblue',   { fg = "#6688ff" } )
+vim.api.nvim_set_hl( 0, 'blinkmauve',  { fg = "#aa77ff" } )
+vim.api.nvim_set_hl( 0, 'blinkviolet', { fg = "#ff99ff" } )
 
 return {
   {
@@ -34,10 +34,14 @@ return {
   },
   {
     "catgoose/nvim-colorizer.lua",
-    event = "BufReadPre",
     opts = {
-      display = {
-        mode = 'foreground'
+      options = {
+        parsers = {
+          names = { enable = false }
+        },
+        display = {
+          mode = "virtualtext"
+        }
       }
     }
   }
