@@ -1,4 +1,4 @@
-local border = {'╭','─','╮','│','╯','─','╰','│'}
+local border = { '╭', '─', '╮', '│', '╯', '─', '╰', '│' }
 return {
   'saghen/blink.cmp',
   dependencies = { 'rafamadriz/friendly-snippets' },
@@ -14,8 +14,7 @@ return {
       ['<C-p>'] = false,
       ['<C-j>'] = { "select_next", "fallback" },
       ['<C-k>'] = { "select_prev", "fallback" },
-      ['<CR>'] = { "accept", "fallback" },
-
+      ['<CR>'] = { "accept", "fallback" }
     },
     appearance = { nerd_font_variant = 'mono' },
     completion = {
@@ -29,9 +28,16 @@ return {
       }
     },
     signature = { window = { border = border } },
-    sources = { default = { 'lsp', 'path', 'snippets', 'buffer' }},
+    sources = {
+      default = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
+      providers = {
+        lazydev = {
+          name = "LazyDev",
+          module = "lazydev.integrations.blink",
+          score_offset = 100
+        }
+      }
+    },
     fuzzy = { implementation = "prefer_rust_with_warning" }
-
   }
-
 }
