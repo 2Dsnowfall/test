@@ -20,10 +20,6 @@ return {
       direction = "horizontal",
       shell = "/usr/bin/fish",
     }
-  },
-  {
-    "lewis6991/gitsigns.nvim",
-    opts = {}
   }
 }
 
