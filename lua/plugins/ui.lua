@@ -6,7 +6,6 @@ vim.api.nvim_set_hl(0, 'blinkgreen', { fg = "#88ff88" })
 vim.api.nvim_set_hl(0, 'blinkblue', { fg = "#6688ff" })
 vim.api.nvim_set_hl(0, 'blinkmauve', { fg = "#aa77ff" })
 vim.api.nvim_set_hl(0, 'blinkviolet', { fg = "#ff99ff" })
-
 return {
   {
     'saghen/blink.pairs',
