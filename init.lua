@@ -1,4 +1,5 @@
 --== STANDARD CONFIGS==--
+require('config.colorscheme')
 require('config.editor')
 require('config.diagnostics')
 require('config.keymaps')
