@@ -45,6 +45,8 @@ return {
     opts = {
       library = {
         { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+        "LazyVim",
+        { path = "blink.lib",          words = { "blink" } }
       }
     }
   },
