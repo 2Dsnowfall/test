@@ -7,7 +7,16 @@ return {
   ---@type blink.cmp.Config
 
   opts = {
-    keymap = { preset = "default" },
+    keymap = {
+      preset = "default",
+      ['<C-e>'] = false,
+      ['<C-n>'] = false,
+      ['<C-p>'] = false,
+      ['<C-j>'] = { "select_next", "fallback" },
+      ['<C-k>'] = { "select_prev", "fallback" },
+      ['<CR>'] = { "accept", "fallback" },
+
+    },
     appearance = { nerd_font_variant = 'mono' },
     completion = {
       menu = {
