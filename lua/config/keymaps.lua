@@ -14,3 +14,7 @@ vim.keymap.set("v", "x", '"+x', { desc = "Copy highlighted to system clipboard" 
 vim.keymap.set("n", "X", '"+x', { desc = "Copy highlighted to system clipboard" })
 vim.keymap.set("n", "YY", '"+yy', { desc = "Copy  to system clipboard" })
 vim.keymap.set("n", "DD", '"+dd', { desc = "Copy  to system clipboard" })
+
+-- Disable keyword completion
+vim.keymap.set("i", "<C-n>", "<Nop>", { desc = "Disable keyword completion next" })
+vim.keymap.set("i", "<C-p>", "<Nop>", { desc = "Disable keyword completion prev" })
