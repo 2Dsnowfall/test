@@ -1,11 +1,11 @@
 -- Blink colorscheme
-vim.api.nvim_set_hl( 0, 'blinkred',    { fg = "#ff8888" } )
-vim.api.nvim_set_hl( 0, 'blinkorange', { fg = "#ffbb88" } )
-vim.api.nvim_set_hl( 0, 'blinkyellow', { fg = "#ffff88" } )
-vim.api.nvim_set_hl( 0, 'blinkgreen',  { fg = "#88ff88" } )
-vim.api.nvim_set_hl( 0, 'blinkblue',   { fg = "#6688ff" } )
-vim.api.nvim_set_hl( 0, 'blinkmauve',  { fg = "#aa77ff" } )
-vim.api.nvim_set_hl( 0, 'blinkviolet', { fg = "#ff99ff" } )
+vim.api.nvim_set_hl(0, 'blinkred', { fg = "#ff8888" })
+vim.api.nvim_set_hl(0, 'blinkorange', { fg = "#ffbb88" })
+vim.api.nvim_set_hl(0, 'blinkyellow', { fg = "#ffff88" })
+vim.api.nvim_set_hl(0, 'blinkgreen', { fg = "#88ff88" })
+vim.api.nvim_set_hl(0, 'blinkblue', { fg = "#6688ff" })
+vim.api.nvim_set_hl(0, 'blinkmauve', { fg = "#aa77ff" })
+vim.api.nvim_set_hl(0, 'blinkviolet', { fg = "#ff99ff" })
 
 return {
   {
@@ -14,10 +14,10 @@ return {
     version = '*',
     build = function() require('blink.pairs').build():pwait(60000) end,
     --- @module 'blink.pairs'
-    --- @type blink.pairs.config
+    --- @type blink.pairs.Config
     opts = {
       highlights = {
-        groups = { 'blinkred', 'blinkorange', 'blinkyellow', 'blinkgreen', 'blinkblue', 'blinkmauve', 'blinkviolet'  },
+        groups = { 'blinkred', 'blinkorange', 'blinkyellow', 'blinkgreen', 'blinkblue', 'blinkmauve', 'blinkviolet' },
         unmatched_group = 'blinkpairsunmatched',
       },
     }
@@ -45,7 +45,7 @@ return {
       }
     }
   },
-    {
+  {
     "lewis6991/gitsigns.nvim",
     opts = {}
   }
