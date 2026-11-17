@@ -43,6 +43,7 @@ vim.opt.mouse = ''
 vim.opt.undofile = true
 vim.opt.updatetime = 250
 vim.opt.termguicolors = true
+vim.opt.shell = 'fish'
 
 -- native completion
 vim.o.completeopt = ""
