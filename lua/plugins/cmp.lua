@@ -12,6 +12,7 @@ return {
       ['<C-e>'] = false,
       ['<C-n>'] = false,
       ['<C-p>'] = false,
+      ['<C-y>'] = false,
       ['<C-j>'] = { "select_next", "fallback" },
       ['<C-k>'] = { "select_prev", "fallback" },
       ['<CR>'] = { "accept", "fallback" }
