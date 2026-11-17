@@ -7,9 +7,9 @@ return {
       },
       ui = {
         icons = {
-          package_installed = "☑",
+          package_installed = "🗹",
           package_pending = "➜",
-          package_uninstalled = "☒"
+          package_uninstalled = "🗷"
         },
         border = {'┏','━','┓','┃','┛','━','┗','┃'},
       }
@@ -58,8 +58,8 @@ return {
           },
         },
       })
+    require("mason-lspconfig").setup()
     end,
-    require("nvim-lspconfig").setup()
   },
   {
     'WhoIsSethDaniel/mason-tool-installer.nvim',
