@@ -34,13 +34,48 @@ return {
           },
         },
       })
-
-      require("mason-lspconfig").setup({
-        ensure_installed = {
-          "lua_ls",
-          "basedpyright",
+      vim.lsp.config("basedpyright", {
+        settings = {
+          basedpyright = {
+            analysis = {
+              typeCheckingMode = "standard",
+              autoImportCompletions = true,
+              diagnosticMode = "workspace",
+              inlayHints = {
+                variableTypes = true,
+                callArgumentNames = true,
+              },
+            },
+          },
         },
       })
+      vim.lsp.config("ruff", {
+        init_options = {
+          settings = {
+            logLevel = "error",
+          },
+        },
+      })
+      require("mason-lspconfig").setup {}
     end,
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    opts = {
+      ensure_installed = {
+          "lua_ls",
+          "basedpyright",
+          "ruff",
+          "rust-analyzer",
+          "black"
+      },
+      auto_update = true,
+      run_on_start = true,
+      start_delay = 3000,
+      debounce_hours = 2,
+      integrations = {
+        ['mason-lspconfig'] = true
+      }
+    }
   }
 }
