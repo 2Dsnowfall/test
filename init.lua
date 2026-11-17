@@ -1,5 +1,4 @@
 --== STANDARD CONFIGS==--
-require('config.colorscheme')
 require('config.editor')
 require('config.diagnostics')
 require('config.keymaps')
@@ -10,3 +9,4 @@ require('config.keymaps')
 require('init.lazy')
 
 --== PLUNGIN CONFIGS ==--
+require('config.colorscheme')
